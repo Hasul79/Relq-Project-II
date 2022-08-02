@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+	<title>Navbar</title>
+</head>
+<body>
+      
+	<div class="nav">
+		<a href="../index.html"><img src="../image/—Pngtree—vector back icon_4190818.png"  width="100%"   class="png"></a>
+		   <ul>
+		    <li><a href="#">Հասմիկ Մինասյան </a>
+				<ul>
+					<li><a href="../armhangman/index.html"  target="_blank">Hangman </a></li>
+					<li><a href="https://hasul79.github.io/Calculator/" target="_blank">Calculator </a></li>
+					<li><a href="https://hasul79.github.io/Weather-App/" target="_blank"> Weather app</a></li>
+					<li><a href="https://hasul79.github.io/To-Do-List/">To Do List </a></li>
+					<li><a href="https://hasul79.github.io/Timer/" target="_blank"> Timer </a></li>
+				</ul>
+			</li>
+			<li><a href="#">Արմեն Ղասաբյան </a>
+				<ul>
+					<li><a href="#">Hangman </a></li>
+					<li><a href="#">Calculator </a></li>
+					<li><a href="#"> Weather app</a></li>
+					<li><a href="#">To Do List </a></li>
+					<li><a href="#"> Timer </a></li>
+				</ul>
+			</li>
+			<li><a href="#">Ռոզի Խաչատրյան</a>
+				<ul>
+					<li><a href="#">Hangman </a></li>
+					<li><a href="#">Calculator </a></li>
+					<li><a href="#"> Weather app</a></li>
+					<li><a href="#">To Do List </a></li>
+					<li><a href="#"> Timer </a></li>
+				</ul>
+			</li>
+			<li><a href="#">Կարինե Ադլոյան</a>
+				<ul>
+					<li><a href="#">Hangman </a></li>
+					<li><a href="#">Calculator </a></li>
+					<li><a href="#"> Weather app</a></li>
+					<li><a href="#">To Do List </a></li>
+					<li><a href="#"> Timer </a></li>
+				</ul>
+			</li>
+			<li><a href="#">Սլավա Խաչատրյան </a>
+				<ul>
+					<li><a href="#">Hangman </a></li>
+					<li><a href="#">Calculator </a></li>
+					<li><a href="#"> Weather app</a></li>
+					<li><a href="#">To Do List </a></li>
+					<li><a href="#"> Timer </a></li>
+				</ul>
+			</li>
+			<img src="../image/moon.png" id="icon" >
+		</ul>
+		
+	</div>
+	
+	<script >
+	 let icon = document.getElementById("icon");
+	 icon.onclick = function(){
+		document.body.classList.toggle("dark");
+		if(document.body.classList.contains("dark")){
+			icon.src="../image/sun.png";
+		} else {
+			icon.src="../image/moon.png";
+		}
+	}
+
+	</script>
+	
+</body>
+</html>
