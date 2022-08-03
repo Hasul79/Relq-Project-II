@@ -3,33 +3,33 @@
 // տառերը
 const letters = "աբգդեզէըթժիլխծկհձղճմյնշոչպջռսվտրցուփքևօֆ";
 
-// Get Array From Letters
+// տառերից զանգված ստանալ
 let lettersArray = Array.from(letters);
 
-// Select Letters Container
+// Ընտրել տառերի կոնտեյներ
 let lettersContainer = document.querySelector(".letters");
 
-// Generate Letters
+// Ստեղծել տառեր
 lettersArray.forEach(letter => {
 
-     // Create Span
+     // Ստեղծել միջակայք span
       let span = document.createElement("span");
 
-      // Create Letter Text Node
+      // ստեղծել տառերի տեքստային հանգույց
       let theLetter = document.createTextNode(letter);
 
-      // Append The Letter To Span
+      // լրացնել տառը span-ի համար
       span.appendChild(theLetter);
 
-      // Add Class On Span
+      // ավելացնել Class Span-ում
       span.className = 'letter-box';
 
-      // Append Span To The Letters Container
+      // լրացնել  Span To The Letters (Container) միջակայքում
       lettersContainer.appendChild(span);
 
 });
 
-// Object Of Words + Categories
+// ստեղծել օբյեկտ, բառերի  + Categories կատեգորիաներ  (հարց, պատասխան)
 const words = {
   միրգ: ["խնձոր", "տանձ", "սալոր", "կեռաս", "ելակ", "արքայախնձոր", "մանդարին", "խաղող","բանան"],
   բանջարեղեն: ["լոլիկ", "կաղամբ", "կարտոֆիլ", "ստեպղին", "բողկ", "բամիա", "պղպեղ", "սոխ", "ճակնդեղ" ],
@@ -37,11 +37,11 @@ const words = {
   քաղաք: ["Կապան", "Երևան", "Քաջարան", "Էջմիածին", "Սևան", "Գորիս", "Սպիտակ","Վանաձոր", "Եղեգնաձոր"]
 }
 
-// Get Random Property
+// ստանալ պատահական - Random Property
 
 let allKeys = Object.keys(words);
 
-// Random Number Depend On Keys Length
+// պատահական թիվը կախված կլինի keys.length երկարությունից
 let randomPropNumber = Math.floor(Math.random() * allKeys.length);
 
 // Category
@@ -53,7 +53,7 @@ let randomPropValue = words[randomPropName];
 // Random Number Depend On Words
 let randomValueNumber = Math.floor(Math.random() * randomPropValue.length);
 
-// The Chosen Word
+// The Chosen Word - ընտրված բառը
 let randomValueValue = randomPropValue[randomValueNumber];
 
 
