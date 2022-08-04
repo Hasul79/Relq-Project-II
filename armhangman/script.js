@@ -50,7 +50,7 @@ let randomPropName = allKeys[randomPropNumber];
 // Category Words
 let randomPropValue = words[randomPropName];
 
-// Random Number Depend On Words
+// Random Number Depend On Words - պաըահական թիվը կախված է մ
 let randomValueNumber = Math.floor(Math.random() * randomPropValue.length);
 
 // The Chosen Word - ընտրված բառը
@@ -72,33 +72,33 @@ lettersAndSpace.forEach(letter => {
         // Create Empty Span
         let emptySpan = document.createElement("span");
 
-        // If Letter Is Space
+        // If Letter Is Space - եթե մեզ տարածություն է գրում, 
         if (letter === ' ') {
 
-          // Add Class To The Span
+          // Add Class To The Span ավելացնել կլասս - տարածություն
           emptySpan.className = 'with-space';
 
         }
 
-        // Append Span To The Letters Guess Container
+        // Append Span To The Letters Guess Container - լրացնել տառերի գուշակման տարածություն
         lettersGuessContainer.appendChild(emptySpan);
 
 });
 
-// Select Guess Spans
+// Select Guess Spans- ընտրել գուշակվող բառի միջակայքը
 let guessSpans = document.querySelectorAll(".letters-guess span");
 
-// Set Wrong Attempts
+// Set Wrong Attempts -  սխալ -> 0 - եթե սխալ կա
 let wrongAttempts = 0;
 
-// Select The Draw Element
+// Select The Draw Element -նշվում է նկարվող էլեմենտին
 let theDraw = document.querySelector(".hangman-draw");
 
-// Handle Clicking On Letters
+// Handle Clicking On Letters -  տառերի սեղմել
 document.addEventListener("click", (e) => {
 
-      // Set The Choose Status
-      let theStatus = false;
+      // Set The Choose Status - սահմանում ենք ընտրության կարգավիճակ
+      let theStatus = false;  
 
       if (e.target.className === 'letter-box') {
 
